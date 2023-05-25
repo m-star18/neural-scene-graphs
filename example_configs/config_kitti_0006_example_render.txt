@@ -1,6 +1,6 @@
 expname = kitti_tracking_0006_example
 # basedir = ./example_weights
-basedir = /groups/gcd50654/tier4/neural-scene-graphs/example_weights
+basedir = /groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito
 # datadir = ./data/kitti/training/image02/0006
 datadir = /groups/gcd50654/tier4/dataset/kitti/training/image02/0006
 dataset_type = kitti
@@ -32,12 +32,12 @@ render_only=True
 # bckg_only=True
 # obj_only=True
 # white_bkgd=True
-# manipulate=handcrafted_set_06
+manipulate=translate
 
 # Scene06
 near_plane=.5
 far_plane=150.
 
 # No ego motion + driving cars
-first_frame=65
-last_frame=120
+first_frame=0
+last_frame=60
