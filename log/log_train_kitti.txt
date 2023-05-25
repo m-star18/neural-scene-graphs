@@ -1,0 +1,401 @@
+MOFED version '5.4-3.6.8' not available in this container.
+No matching alternate version found.
+2023-05-17 13:46:56.312480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+2023-05-17 13:47:31.864281: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-05-17 13:47:31.902883: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 13:47:31.903244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 13:47:31.903549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 13:47:31.903838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 13:47:31.903869: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:47:32.421803: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 13:47:32.703105: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 13:47:32.789531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 13:47:32.843136: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 13:47:33.094077: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 13:47:33.106334: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 13:47:33.108516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 13:47:33.315769: I tensorflow/core/platform/profile_utils/cpu_utils.cc:109] CPU Frequency: 2400000000 Hz
+2023-05-17 13:47:33.321483: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x42d14b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-17 13:47:33.321536: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2023-05-17 13:47:33.675014: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4a70a70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2023-05-17 13:47:33.675090: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:47:33.675106: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:47:33.675118: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:47:33.675129: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:47:33.678266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 13:47:33.678563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 13:47:33.678851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 13:47:33.679111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 13:47:33.679148: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:47:33.679189: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 13:47:33.679206: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 13:47:33.679221: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 13:47:33.679236: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 13:47:33.679251: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 13:47:33.679266: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 13:47:33.681140: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 13:47:33.697233: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:47:40.109497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-05-17 13:47:40.109596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 1 2 3 
+2023-05-17 13:47:40.109612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N Y Y Y 
+2023-05-17 13:47:40.109622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 1:   Y N Y Y 
+2023-05-17 13:47:40.109631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 2:   Y Y N Y 
+2023-05-17 13:47:40.109641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 3:   Y Y Y N 
+2023-05-17 13:47:40.111156: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:47:40.111210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14645 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3d:00.0, compute capability: 7.0)
+2023-05-17 13:47:40.112087: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:47:40.112141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14645 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3e:00.0, compute capability: 7.0)
+2023-05-17 13:47:40.112911: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:47:40.112956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14645 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b1:00.0, compute capability: 7.0)
+2023-05-17 13:47:40.113728: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:47:40.113784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14645 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b2:00.0, compute capability: 7.0)
+/home/acd13592rd/neural-scene-graphs/data_loader/load_kitti.py:169: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  obj_poses = visible_objects[[frame_intervall, y]][:, 7:10]
+Removing non moving objects
+6.903005344788368
+48.44517575864637
+53.26634319281741
+38.24862414501487
+40.40799079471005
+47.519529051027384
+54.881724275640394
+88.35338723654132
+54.079091032352295
+38.476263310323525
+50.90882515677514
+58.5027820116109
+64.57071394277212
+19.760405699221273
+Loaded kitti (422, 375, 1242, 3) [375, 1242, 721.5377] /groups/gcd50654/tier4/dataset/kitti/training/image02/0006
+[0.] in this scene
+[1.] in this scene
+[2.] in this scene
+[7.] in this scene
+[8.] in this scene
+[3.] in this scene
+[4.] in this scene
+[9.] in this scene
+[5.] in this scene
+[12.] in this scene
+[6.] in this scene
+[10.] in this scene
+[11.] in this scene
+[13.] in this scene
+Traceback (most recent call last):
+  File "main.py", line 1862, in <module>
+    train()
+  File "main.py", line 1407, in train
+    with open(f, 'w') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito/kitti_tracking_0006_example/args.txt'
+MOFED version '5.4-3.6.8' not available in this container.
+No matching alternate version found.
+2023-05-17 13:50:51.959915: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+2023-05-17 13:51:05.729477: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-05-17 13:51:05.754632: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 13:51:05.754980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 13:51:05.755277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 13:51:05.755730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 13:51:05.755762: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:51:05.803990: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 13:51:05.852661: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 13:51:05.861511: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 13:51:05.868717: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 13:51:05.881133: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 13:51:05.882171: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 13:51:05.884080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 13:51:05.934759: I tensorflow/core/platform/profile_utils/cpu_utils.cc:109] CPU Frequency: 2400000000 Hz
+2023-05-17 13:51:05.940874: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x40b4af0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-17 13:51:05.940916: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2023-05-17 13:51:06.274940: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x48538f0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2023-05-17 13:51:06.275043: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:51:06.275060: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:51:06.275071: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:51:06.275081: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:51:06.278291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 13:51:06.278604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 13:51:06.278880: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 13:51:06.279142: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 13:51:06.279175: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:51:06.279214: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 13:51:06.279230: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 13:51:06.279245: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 13:51:06.279260: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 13:51:06.279275: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 13:51:06.279289: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 13:51:06.281201: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 13:51:06.282830: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:51:08.864049: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-05-17 13:51:08.864143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 1 2 3 
+2023-05-17 13:51:08.864157: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N Y Y Y 
+2023-05-17 13:51:08.864168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 1:   Y N Y Y 
+2023-05-17 13:51:08.864177: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 2:   Y Y N Y 
+2023-05-17 13:51:08.864187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 3:   Y Y Y N 
+2023-05-17 13:51:08.865835: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:51:08.865895: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14645 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3d:00.0, compute capability: 7.0)
+2023-05-17 13:51:08.866764: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:51:08.866814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14645 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3e:00.0, compute capability: 7.0)
+2023-05-17 13:51:08.867594: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:51:08.867637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14645 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b1:00.0, compute capability: 7.0)
+2023-05-17 13:51:08.868814: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:51:08.868857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14645 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b2:00.0, compute capability: 7.0)
+/home/acd13592rd/neural-scene-graphs/data_loader/load_kitti.py:169: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  obj_poses = visible_objects[[frame_intervall, y]][:, 7:10]
+Removing non moving objects
+6.903005344788368
+48.44517575864637
+53.26634319281741
+38.24862414501487
+40.40799079471005
+47.519529051027384
+54.881724275640394
+88.35338723654132
+54.079091032352295
+38.476263310323525
+50.90882515677514
+58.5027820116109
+64.57071394277212
+19.760405699221273
+Loaded kitti (422, 375, 1242, 3) [375, 1242, 721.5377] /groups/gcd50654/tier4/dataset/kitti/training/image02/0006
+[0.] in this scene
+[1.] in this scene
+[2.] in this scene
+[7.] in this scene
+[8.] in this scene
+[3.] in this scene
+[4.] in this scene
+[9.] in this scene
+[5.] in this scene
+[12.] in this scene
+[6.] in this scene
+[10.] in this scene
+[11.] in this scene
+[13.] in this scene
+Traceback (most recent call last):
+  File "main.py", line 1862, in <module>
+    train()
+  File "main.py", line 1407, in train
+    with open(f, 'w') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito/kitti_tracking_0006_example/args.txt'
+MOFED version '5.4-3.6.8' not available in this container.
+No matching alternate version found.
+2023-05-17 13:51:32.410303: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+2023-05-17 13:52:05.063130: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-05-17 13:52:05.105714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 13:52:05.106097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 13:52:05.106379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 13:52:05.106649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 13:52:05.106682: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:52:05.616116: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 13:52:05.931164: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 13:52:06.028986: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 13:52:06.090305: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 13:52:06.346636: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 13:52:06.360886: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 13:52:06.363074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 13:52:06.612636: I tensorflow/core/platform/profile_utils/cpu_utils.cc:109] CPU Frequency: 2400000000 Hz
+2023-05-17 13:52:06.617944: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x51eebb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-17 13:52:06.618004: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2023-05-17 13:52:06.973145: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x57378a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2023-05-17 13:52:06.973230: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:52:06.973248: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:52:06.973259: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:52:06.973270: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 13:52:06.976483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 13:52:06.976781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 13:52:06.977047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 13:52:06.977306: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 13:52:06.977340: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:52:06.977379: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 13:52:06.977418: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 13:52:06.977434: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 13:52:06.977449: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 13:52:06.977464: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 13:52:06.977479: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 13:52:06.979369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 13:52:07.000378: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 13:52:14.537288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-05-17 13:52:14.537383: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 1 2 3 
+2023-05-17 13:52:14.537398: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N Y Y Y 
+2023-05-17 13:52:14.537408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 1:   Y N Y Y 
+2023-05-17 13:52:14.537418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 2:   Y Y N Y 
+2023-05-17 13:52:14.537427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 3:   Y Y Y N 
+2023-05-17 13:52:14.538957: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:52:14.539012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14645 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3d:00.0, compute capability: 7.0)
+2023-05-17 13:52:14.539804: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:52:14.539856: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14645 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3e:00.0, compute capability: 7.0)
+2023-05-17 13:52:14.540633: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:52:14.540683: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14645 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b1:00.0, compute capability: 7.0)
+2023-05-17 13:52:14.541803: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 13:52:14.541848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14645 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b2:00.0, compute capability: 7.0)
+/home/acd13592rd/neural-scene-graphs/data_loader/load_kitti.py:169: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  obj_poses = visible_objects[[frame_intervall, y]][:, 7:10]
+Removing non moving objects
+6.903005344788368
+48.44517575864637
+53.26634319281741
+38.24862414501487
+40.40799079471005
+47.519529051027384
+54.881724275640394
+88.35338723654132
+54.079091032352295
+38.476263310323525
+50.90882515677514
+58.5027820116109
+64.57071394277212
+19.760405699221273
+Loaded kitti (422, 375, 1242, 3) [375, 1242, 721.5377] /groups/gcd50654/tier4/dataset/kitti/training/image02/0006
+[0.] in this scene
+[1.] in this scene
+[2.] in this scene
+[7.] in this scene
+[8.] in this scene
+[3.] in this scene
+[4.] in this scene
+[9.] in this scene
+[5.] in this scene
+[12.] in this scene
+[6.] in this scene
+[10.] in this scene
+[11.] in this scene
+[13.] in this scene
+Traceback (most recent call last):
+  File "main.py", line 1862, in <module>
+    train()
+  File "main.py", line 1407, in train
+    with open(f, 'w') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito/kitti_tracking_0006_example/args.txt'
+MOFED version '5.4-3.6.8' not available in this container.
+No matching alternate version found.
+2023-05-17 14:02:12.828203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+2023-05-17 14:02:53.372798: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2023-05-17 14:02:53.410895: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 14:02:53.411255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 14:02:53.411538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 14:02:53.411816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 14:02:53.411844: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 14:02:54.214456: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 14:02:54.536602: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 14:02:54.637203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 14:02:54.699626: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 14:02:55.000930: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 14:02:55.012749: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 14:02:55.014799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 14:02:55.220907: I tensorflow/core/platform/profile_utils/cpu_utils.cc:109] CPU Frequency: 2400000000 Hz
+2023-05-17 14:02:55.226617: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x459bcb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-17 14:02:55.226672: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2023-05-17 14:02:55.578581: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x504d5b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2023-05-17 14:02:55.578687: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 14:02:55.578705: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 14:02:55.578717: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 14:02:55.578728: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2023-05-17 14:02:55.581916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2023-05-17 14:02:55.582215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2023-05-17 14:02:55.582480: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b1:00.0
+2023-05-17 14:02:55.582745: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1666] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2023-05-17 14:02:55.582784: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 14:02:55.582833: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2023-05-17 14:02:55.582851: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2023-05-17 14:02:55.582868: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2023-05-17 14:02:55.582885: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2023-05-17 14:02:55.582902: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2023-05-17 14:02:55.582918: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2023-05-17 14:02:55.584793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1794] Adding visible gpu devices: 0, 1, 2, 3
+2023-05-17 14:02:55.600645: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2023-05-17 14:03:03.290973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-05-17 14:03:03.291086: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 1 2 3 
+2023-05-17 14:03:03.291103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N Y Y Y 
+2023-05-17 14:03:03.291114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 1:   Y N Y Y 
+2023-05-17 14:03:03.291125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 2:   Y Y N Y 
+2023-05-17 14:03:03.291135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 3:   Y Y Y N 
+2023-05-17 14:03:03.292755: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 14:03:03.292810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14645 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3d:00.0, compute capability: 7.0)
+2023-05-17 14:03:03.293641: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 14:03:03.293708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14645 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:3e:00.0, compute capability: 7.0)
+2023-05-17 14:03:03.294430: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 14:03:03.294475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14645 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b1:00.0, compute capability: 7.0)
+2023-05-17 14:03:03.295187: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-05-17 14:03:03.295230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14645 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:b2:00.0, compute capability: 7.0)
+/home/acd13592rd/neural-scene-graphs/data_loader/load_kitti.py:169: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  obj_poses = visible_objects[[frame_intervall, y]][:, 7:10]
+/home/acd13592rd/neural-scene-graphs/prepare_input_helper.py:437: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  _eq_sz_rays = np.repeat(np.concatenate(np.array(_new_rays_rgb[_id_hit]), axis=0), _hit_factor, axis=0)
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2023-05-17 14:14:26.373533: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+WARNING:tensorflow:From /home/acd13592rd/neural-scene-graphs/neural_scene_graph_helper.py:13: The name tf.log is deprecated. Please use tf.math.log instead.
+
