@@ -1,0 +1,1 @@
+PYTHONPATH=. python -m tensorboard.main --logdir=/groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito/summaries/kitti_tracking_0006_example --port 6006 --host 0.0.0.0
