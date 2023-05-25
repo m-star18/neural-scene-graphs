@@ -1402,7 +1402,7 @@ def train():
     # Create log dir and copy the config file
     basedir = args.basedir
     expname = args.expname
-    os.makedirs(os.path.join(basedir, expname), exist_ok=True)
+    # os.makedirs(os.path.join(basedir, expname), exist_ok=True)
     f = os.path.join(basedir, expname, 'args.txt')
     with open(f, 'w') as file:
         for arg in sorted(vars(args)):
@@ -1467,7 +1467,10 @@ def train():
         print('test poses shape', render_poses.shape)
 
         # Select random from render_poses
-        render_poses = render_poses[np.random.randint(0, len(render_poses) - 1, np.minimum(3, len(render_poses)))]
+        # render_poses = render_poses[np.random.randint(0, len(render_poses) - 1, np.minimum(10, len(render_poses)))]
+        
+        # all Render_poses!
+        render_poses = render_poses[np.random.randint(0, len(render_poses) - 1, len(render_poses))]
 
         rgbs, _ = render_path(render_poses, hwf, args.chunk, render_kwargs_test,
                               obj=obj_nodes if args.use_object_properties and not args.bckg_only else None,
