@@ -26,3 +26,4 @@ data_loader/__pycache__/*.pyc
 work/
 log4txt
 __pycache__/
+.log/
