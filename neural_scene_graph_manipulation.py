@@ -23,9 +23,11 @@ def dancing_objects(obj_i, steps=30, min=-np.pi*1/5, max=np.pi*1/5):
 
     return obj_dancing
 
+
 def move_along_track(objs):
 
     return objs
+
 
 def ghost_street(objs):
     selected_obj = np.random.choice
@@ -41,6 +43,39 @@ def remove_obj_from_set(obj_set, obj_meta, rm_obj):
 
     return obj_set
 
+
+def rotate_object_360(obj_pose, steps=37):
+    obj_pose = np.reshape(obj_pose, [-1, 6])
+
+    rotation_poses = np.repeat(obj_pose, steps, axis=0)
+
+    rotation_angles = np.linspace(0, 2 * np.pi, steps, endpoint=False)
+    rotation_poses[:, 3] += rotation_angles
+
+    return np.reshape(rotation_poses, [steps, -1, 3])
+
+def move_and_turn_left_single_frame(obj_pose, frame_number, steps=11, forward_dx=2.0, turn_angle=np.pi/6):
+    # Convert frame_number to represent the progression through the animation
+    progress = frame_number % steps
+
+    # Calculate the local displacement along the x-axis for the current frame
+    forward_disp = np.array([forward_dx * progress / steps, 0])
+
+    # Calculate the rotation for the current frame
+    current_angle = turn_angle * progress / steps
+    cos_angle = np.cos(current_angle)
+    sin_angle = np.sin(current_angle)
+
+    # Apply the rotation to the local displacement
+    rotated_disp = np.array([forward_disp[0]*cos_angle - forward_disp[1]*sin_angle, forward_disp[0]*sin_angle + forward_disp[1]*cos_angle])
+
+    # Update the object's position
+    obj_pose[:, [0, 2]] += rotated_disp
+
+    # Update the object's rotation
+    obj_pose[:, 3] += current_angle
+
+    return obj_pose
 
 
 def manipulate_obj_pose(manipulation, obj, obj_meta, i, rm_obj=None):
@@ -209,7 +244,25 @@ def manipulate_obj_pose(manipulation, obj, obj_meta, i, rm_obj=None):
                 obj_i[0] = obj_old[j] + np.array([0., 0., d, 0., 0., 0.])
                 obj_i = tf.cast(obj_i, tf.float32)
                 render_set.append([obj_i])
+        
+    elif manipulation == '360_rotate':
+        select_obj = np.random.choice(np.linspace(0, len(obj[0]) // 2 - 1, len(obj[0]) // 2).astype(np.int32))
+        rotate_obj = rotate_object_360(obj[i, select_obj * 2:(select_obj * 2 + 2)])
+        obj = np.repeat(obj[i][None], rotate_obj.shape[0], axis=0)
+        obj = np.ones_like(obj) * -1.
+        obj[..., 0:2, :] = rotate_obj
+
+        for obj_i in obj:
+            obj_i = tf.cast(obj_i, tf.float32)
+            obj_i = tf.reshape(obj_i, [obj_i.shape[0] // 2, 2 * 3])
+            render_set.append([obj_i])
+
+    elif manipulation == 'move_left':
+        obj = move_and_turn_left_single_frame(obj[i])
+
+        for obj_i in obj:
+            obj_i = tf.cast(obj_i, tf.float32)
+            obj_i = tf.reshape(obj_i, [obj_i.shape[0] // 2, 2 * 3])
+            render_set.append([obj_i])
 
     return render_set
-
-
