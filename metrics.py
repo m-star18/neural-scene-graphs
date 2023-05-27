@@ -3,7 +3,7 @@ from PIL import Image
 import tensorflow as tf
 import numpy as np
 import lpips_tf
-from cv2 import *
+import cv2
 from matplotlib import pyplot as plt
 
 calcOpticalFlow = cv2.calcOpticalFlowFarneback
@@ -115,9 +115,9 @@ def config_parser():
 
     parser.add_argument("--method", type=str, default='temporal',
                         help='method name: all, lpips, psnr, ssim, temporal')
-    parser.add_argument("--gt_dir", type=str, default='/home/julian/Desktop/renderings_kitti/0006/gt_0006_65_120',
+    parser.add_argument("--gt_dir", type=str, default='/groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito/kitti_tracking_0006_example/0004/',
                         help='GT images directory')
-    parser.add_argument("--render_dir", type=str, default='/home/julian/Desktop/renderings_kitti/0006/latent_jointly_04_really_big_dense_boxes/renderonly_path_990001',
+    parser.add_argument("--render_dir", type=str, default='/groups/gcd50654/tier4/neural-scene-graphs/example_weights/rito/kitti_tracking_0006_example/renderonly_path_060001/',
                         help='Rendering dir')
     parser.add_argument("--batch_size", type=int, default=1,
                         help="Number of image pairs evaluated at the same time")
