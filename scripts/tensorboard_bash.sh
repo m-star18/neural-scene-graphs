@@ -3,7 +3,7 @@
 #$-l rt_G.small=1
 #$-l h_rt=1:00:00
 #$-j y
-#$ -o log/log_train_tensorboard.txt
+#$ -o .log/log_train_tensorboard.txt
 #$-cwd
 
 source /etc/profile.d/modules.sh

@@ -1,0 +1,1 @@
+PYTHONPATH=. python metrics.py --method all --render_dir /groups/gcd50654/tier4/neural-scene-graphs/example_weights/kitti_tracking_0006_example/renderonly_path_730001/
