@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#$-l rt_F=8
+#$-l rt_G.small=1
 #$-l h_rt=8:00:00
 #$-j y
-#$ -o log/log_train_kitti.txt
+#$ -o .log/log_train_kitti.txt
 #$-cwd
 
 source /etc/profile.d/modules.sh
